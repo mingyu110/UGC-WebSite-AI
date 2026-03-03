@@ -1,0 +1,36 @@
+"""
+Agent Prompts Module
+
+Contains system prompts for different phases of website generation.
+Based on UGC AI Solution Architecture section 5.7.
+"""
+
+from prompts.planning import (
+    PLANNING_SYSTEM_PROMPT,
+    PLANNING_NEXT_STEP_PROMPT,
+    PLANNING_CLARIFICATION_PROMPT,
+    PLANNING_DESIGN_EXTRACTION_PROMPT,
+)
+from prompts.coding import (
+    CODING_SYSTEM_PROMPT,
+    CODING_NEXT_STEP_PROMPT,
+    CODING_VALIDATION_PROMPT,
+    CODING_FILE_GENERATION_PROMPT,
+    CODING_COMPONENT_PROMPT,
+    CODING_API_ROUTE_PROMPT,
+)
+
+__all__ = [
+    # Planning phase prompts
+    "PLANNING_SYSTEM_PROMPT",
+    "PLANNING_NEXT_STEP_PROMPT",
+    "PLANNING_CLARIFICATION_PROMPT",
+    "PLANNING_DESIGN_EXTRACTION_PROMPT",
+    # Coding phase prompts
+    "CODING_SYSTEM_PROMPT",
+    "CODING_NEXT_STEP_PROMPT",
+    "CODING_VALIDATION_PROMPT",
+    "CODING_FILE_GENERATION_PROMPT",
+    "CODING_COMPONENT_PROMPT",
+    "CODING_API_ROUTE_PROMPT",
+]

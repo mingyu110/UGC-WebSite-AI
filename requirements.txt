@@ -1,0 +1,17 @@
+# Core dependencies for ECS Fargate deployment
+# AgentCore Browser requires: bedrock-agentcore strands-agents strands-agents-tools playwright nest-asyncio
+# See: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browser-onboarding.html
+strands-agents>=1.0.0
+strands-agents-tools>=0.2.0
+bedrock-agentcore
+mcp>=1.0.0
+boto3>=1.42.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+fastapi>=0.110.0
+uvicorn>=0.27.0
+python-dotenv>=1.0.0
+aiohttp>=3.8.0
+mangum>=0.17.0
+nest_asyncio>=1.6.0
+playwright>=1.40.0

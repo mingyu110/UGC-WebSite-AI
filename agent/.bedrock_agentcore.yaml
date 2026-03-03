@@ -1,0 +1,66 @@
+default_agent: ugc_website_generator
+agents:
+  ugc_website_generator:
+    name: ugc_website_generator
+    language: python
+    node_version: '20'
+    entrypoint: /Users/jackljx/Documents/Agnes/ugc-ai-demo/agent/agentcore_handler.py
+    deployment_type: container
+    runtime_type: null
+    platform: linux/arm64
+    container_runtime: none
+    source_path: /Users/jackljx/Documents/Agnes/ugc-ai-demo/agent
+    aws:
+      execution_role: arn:aws:iam::947472889616:role/AmazonBedrockAgentCoreSDKRuntime-us-east-1-201eb2b3a8
+      execution_role_auto_create: false
+      account: '947472889616'
+      region: us-east-1
+      ecr_repository: 947472889616.dkr.ecr.us-east-1.amazonaws.com/bedrock-agentcore-ugc_website_generator
+      ecr_auto_create: false
+      s3_path: null
+      s3_auto_create: false
+      network_configuration:
+        network_mode: PUBLIC
+        network_mode_config: null
+      protocol_configuration:
+        server_protocol: HTTP
+      observability:
+        enabled: true
+      lifecycle_configuration:
+        idle_runtime_session_timeout: null
+        max_lifetime: null
+    bedrock_agentcore:
+      agent_id: ugc_website_generator-r4ApYLEVE1
+      agent_arn: arn:aws:bedrock-agentcore:us-east-1:947472889616:runtime/ugc_website_generator-r4ApYLEVE1
+      agent_session_id: null
+    codebuild:
+      project_name: bedrock-agentcore-ugc_website_generator-builder
+      execution_role: arn:aws:iam::947472889616:role/AmazonBedrockAgentCoreSDKCodeBuild-us-east-1-201eb2b3a8
+      source_bucket: bedrock-agentcore-codebuild-sources-947472889616-us-east-1
+    memory:
+      mode: STM_ONLY
+      memory_id: ugc_website_generator_mem-Zd80vx6DdN
+      memory_arn: arn:aws:bedrock-agentcore:us-east-1:947472889616:memory/ugc_website_generator_mem-Zd80vx6DdN
+      memory_name: ugc_website_generator_mem
+      event_expiry_days: 30
+      first_invoke_memory_check_done: true
+      was_created_by_toolkit: false
+    identity:
+      credential_providers:
+      - name: ugc-gateway-oauth-provider
+        arn: arn:aws:bedrock-agentcore:us-east-1:947472889616:token-vault/default/oauth2credentialprovider/ugc-gateway-oauth-provider
+        type: custom-oauth2
+        callback_url: ''
+      workload: null
+    aws_jwt:
+      enabled: false
+      audiences: []
+      signing_algorithm: ES384
+      issuer_url: null
+      duration_seconds: 300
+    authorizer_configuration: null
+    request_header_configuration: null
+    oauth_configuration: null
+    api_key_env_var_name: null
+    api_key_credential_provider_name: null
+    is_generated_by_agentcore_create: false

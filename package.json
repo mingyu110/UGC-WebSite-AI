@@ -1,0 +1,23 @@
+{
+  "name": "ugc-ai-demo",
+  "version": "0.1.0",
+  "description": "UGC AI Website Generation Demo",
+  "private": true,
+  "workspaces": [
+    "infra"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=infra",
+    "deploy": "npm run deploy --workspace=infra",
+    "synth": "npm run synth --workspace=infra"
+  },
+  "keywords": [
+    "aws",
+    "cdk",
+    "ai",
+    "website-generator",
+    "strands-agents"
+  ],
+  "author": "AWS Demo",
+  "license": "MIT"
+}

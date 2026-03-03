@@ -1,0 +1,13 @@
+# AgentCore Tools Configuration
+# Generated: 2026-02-28
+# Updated: Code Interpreter changed to SANDBOX mode for better security
+
+AGENTCORE_BROWSER_ID=ugc_browser-pXEF8HjbYA
+AGENTCORE_CODE_INTERPRETER_ID=ugc_code_interpreter-xWbd7jhzHc
+AWS_REGION=us-east-1
+S3_BUCKET=ugc-ai-demo-browser-recordings-947472889616
+IAM_ROLE_ARN=arn:aws:iam::947472889616:role/ugc-ai-demo-agentcore-tools-role
+
+# Security Configuration
+# Browser: PUBLIC (needs internet to browse websites)
+# Code Interpreter: SANDBOX (secure code validation, no internet needed)
