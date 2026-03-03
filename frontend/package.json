@@ -1,0 +1,37 @@
+{
+  "name": "ugc-ai-demo-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "UGC AI Demo - AI Website Generator Frontend",
+  "scripts": {
+    "dev": "next dev",
+    "dev:mock": "MOCK_MODE=true NEXT_PUBLIC_USE_MOCK=true next dev",
+    "dev:agent": "MOCK_MODE=false NEXT_PUBLIC_USE_MOCK=false next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf .next node_modules",
+    "start:dev": "./scripts/start-dev.sh"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-markdown": "^10.1.0",
+    "rehype-highlight": "^7.0.2",
+    "remark-gfm": "^4.0.1",
+    "tailwind-merge": "^3.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
