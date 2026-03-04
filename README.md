@@ -653,7 +653,7 @@ def _get_agentcore_tools():
 ```python
 # model_router.py
 MODEL_ROUTING = {
-    TaskType.COPYWRITING: ModelConfig(model_id="amazon.nova-2-lite-v1:0", ...),  # ~90% 成本节省
+    TaskType.COPYWRITING: ModelConfig(model_id="amazon.nova-2-lite-v1:0", ...),  # 模型token调用成本节省
     TaskType.SEO: ModelConfig(model_id="amazon.nova-2-lite-v1:0", ...),
     TaskType.CODE_GENERATION: ModelConfig(model_id="us.anthropic.claude-sonnet-4-20250514-v1:0", ...),  # 最高质量
     TaskType.DEBUGGING: ModelConfig(model_id="us.anthropic.claude-sonnet-4-20250514-v1:0", ...),
